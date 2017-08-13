@@ -13,6 +13,32 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding class="home">
+    <ion-grid>
+        <ion-row>
+            <ion-col width-100>
+                <ion-list>
+                    <form (ngSubmit)="saveForm()">
+                        <ion-item class="list">
+                            <ion-label class="label" fixed>
+                                Город
+                            </ion-label>
+                            <ion-input [(ngModel)]="city" name="city" type="text">
+                            </ion-input>
+                        </ion-item>
+                        <ion-item class="list">
+                            <ion-label class="label" fixed>
+                                Зона
+                            </ion-label>
+                            <ion-input [(ngModel)]="state" name="state" type="text">
+                            </ion-input>
+                        </ion-item>
+                        <br>
+                        <br>
+                        <button ion-button class="btn" type="submit">Сохранить настройки</button>
+                    </form>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

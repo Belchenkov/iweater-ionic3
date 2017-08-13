@@ -3,7 +3,8 @@ body {
     color: color($colors, light);
 }
 
-.home {
+.home,
+{
     background: color($colors, primary);
     color: color($colors, light);
     margin-top: 30px;
@@ -15,4 +16,34 @@ body {
 
 .tabs-md .tab-button-icon {
     color: #ccc;
+}
+
+.temp {
+    font-size: 90px;
+    text-align: center;
+}
+
+.location,
+.icon,
+.desc,
+.date {
+    text-align: center;
+}
+
+.list {
+    background: color($colors, primary)!important;
+    color: color($colors, light)!important;
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+}
+
+.location {
+    font-size: 40px;
+}
+
+.desc {
+    font-size: 30px;
 }
